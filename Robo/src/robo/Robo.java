@@ -1,21 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package robo;
+package principal;
 
-/**
- *
- * @author lucas
- */
+import sensors.*;
+
+//Singleton
+
+
 public class Robo {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+	
+	private float SujeiraColetada=0;
+	private Ponto posicao = new Ponto();
+	private Sensor proximidade = new ProximitySensor();
+	private Sensor sujeira = new DirtSensor();
+	
+	static private Robo instance = new Robo();
+	
+	private Robo() {
+		
+	}
+	
+	static public Robo getInstance() {
+		return instance;
+	}
+	
+	public Ponto getPosicao() {
+		return posicao;
+	}
 }
