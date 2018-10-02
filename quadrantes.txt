@@ -5,4 +5,5 @@ float porcentagem;
 
 
 float getPorcentagem()
-
+int getX();
+int getY();
