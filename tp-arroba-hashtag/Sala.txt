@@ -1,0 +1,5 @@
+vetor quadrantes[tamanhoSala][tamanhoSala];
+
+void atualizaValores(); ##Funcao a ser chamada constantemente para atualizar valores
+sala* getInstance();
+void sujeiraColetada(float quantidadeSujeira, quadrante quad){}
