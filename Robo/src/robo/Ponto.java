@@ -4,6 +4,11 @@ import java.awt.Point;
 
 public class Ponto extends Point{
 	
+	public Ponto(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
 	public Point acima () {
 		return new Point(x+1, y);
 	}
