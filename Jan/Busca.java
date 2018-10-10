@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package principal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +9,7 @@ import java.util.Queue;
 public class Busca{
     List<List<Integer>> grafoIDs   = new ArrayList<List<Integer>>();
     List<List<Double>>  grafoPesos = new ArrayList<List<Double>>();
-    
+    Sala sala;
     int tamanhoGrafo;
     
     private void atualizaDados(){
@@ -27,7 +21,7 @@ public class Busca{
         for(i=0; i<tamanhoGrafo; i++){
             
             for(Integer v: grafoIDs.get(i)){                
-                temp = Sala.getPorcentagem(v);
+                temp = sala.getPorcentagem(v);
 
                 if(temp <0.01) 
                     temp = 1/0.015;
@@ -113,13 +107,13 @@ public class Busca{
     
     Busca(){
         int i;
-  
-        tamanhoGrafo = Sala.getAltura()*Sala.getAltura();
+        sala = Sala.getInstance();
+        tamanhoGrafo = Sala.ALTURA*Sala.ALTURA;
         List<Integer> vizinhos = new ArrayList<Integer>();
         
         for(i=0; i<tamanhoGrafo; i++){
             //vizinhos = Sala.getVizinhos(i);
-            vizinhos = Sala.getVizinhos(tamanhoGrafo,i);
+            vizinhos = sala.getVizinhos(i);
             
             grafoIDs.add(vizinhos);
             

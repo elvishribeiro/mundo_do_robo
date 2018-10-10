@@ -13,7 +13,7 @@ public class Quadrante {
         private int    coletasMaiores;
         private int    coletasMenores;
         
-        Ponto coordenadas;
+        private Ponto coordenadas;
 	
 	public Quadrante(Ponto coordenadas) {
 		id = QUADRANTE_QTD++;
@@ -103,5 +103,9 @@ public class Quadrante {
         
         public double getAlhpa(){
             return alpha;
+        }
+        
+        public Ponto getPonto() {
+        	return coordenadas;
         }
 }
