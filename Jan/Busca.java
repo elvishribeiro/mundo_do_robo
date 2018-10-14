@@ -38,6 +38,10 @@ public class Busca{
     
     public List<Integer> dijkstra(int saida, int chegada){
         atualizaDados();
+        try{
+            Thread.sleep(1000/60);
+        }catch(Exception Ex){
+        }
         
         boolean visitados[]= new boolean[tamanhoGrafo];
         double dist      []= new double[tamanhoGrafo];
