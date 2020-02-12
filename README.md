@@ -10,7 +10,6 @@ Mais detalhes estão presentes na [documentação](https://github.com/elvishribe
 
 
 > Este trabalho foi feito para a disciplina de Inteligência Artificial
-
 > do 5º período do curso de Ciência da Computação da UFSJ.*
 
 > Integrantes do grupo:
