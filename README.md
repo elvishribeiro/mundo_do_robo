@@ -18,5 +18,5 @@ Mais detalhes estão presentes na [documentação](https://github.com/elvishribe
 *Jan Pierre Agenciano da Silva Rocha*<br/>
 *Lucas Leite de Oliveira*
 
-Para executar simplesmente roda o arquivo [executavel.jar](https://github.com/elvishribeiro/tp-arroba-hashtag/blob/master/executavel.jar) com a JVM:
+Para executar simplesmente execute o arquivo [executavel.jar](https://github.com/elvishribeiro/tp-arroba-hashtag/blob/master/executavel.jar) com a JVM:
 ```$ java -jar executavel.jar```
